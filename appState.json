@@ -61,10 +61,19 @@
         },
         "triggers": [
           {
-            "resourceName": "apigeuWest1testAdalotest1put",
+            "resourceName": "apigeuWest1testAdalotest2put",
             "config": {}
           }
-        ]
+        ],
+        "testCases": {
+          "ac55cce8-5020-4242-9c62-90c57215c66a": {
+            "id": "ac55cce8-5020-4242-9c62-90c57215c66a",
+            "name": "Test event",
+            "functionId": "4861328b-22b5-49ae-95a7-b0239b6fc3f2",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "openFiles": [
@@ -99,6 +108,26 @@
           "selectedRegion": "eu-west-1",
           "apiMode": 0,
           "apiName": "test-adalo",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "test1",
+          "resourcePath": "/test1",
+          "restMethod": "PUT",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "rtajyk",
+          "mode": 0
+        }
+      },
+      "apigeuWest1testAdalotest2put": {
+        "name": "apigeuWest1testAdalotest2put",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-1",
+          "apiMode": 0,
+          "apiName": "test-adalo",
           "apiId": "7y2jumc19h",
           "endpointType": "EDGE",
           "rootResourceId": "7fb1j6gwrh",
@@ -107,8 +136,8 @@
             "/": "7fb1j6gwrh"
           },
           "resourceMode": 0,
-          "resourceName": "test1",
-          "resourcePath": "/test1",
+          "resourceName": "test2",
+          "resourcePath": "/test2",
           "restMethod": "PUT",
           "proxyIntegration": false,
           "enableCORS": false,
@@ -146,7 +175,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1588604219826
+    "lastSave": 1588604786391
   },
   "VCS_STATE": {
     "provider": "GitHub",
