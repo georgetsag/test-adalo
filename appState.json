@@ -1,0 +1,103 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "f4eb6bfc-1991-450c-a262-e04ee6a7de72": {
+        "id": "f4eb6bfc-1991-450c-a262-e04ee6a7de72",
+        "parent": null,
+        "name": "test-adalo.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test-adalo.py",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "testAdalo"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuWest1testAdalotestget",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "a39877c2-6629-4aca-a810-2b521e13269c": {
+            "id": "a39877c2-6629-4aca-a810-2b521e13269c",
+            "name": "Test event",
+            "functionId": "f4eb6bfc-1991-450c-a262-e04ee6a7de72",
+            "event": "{}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "f4eb6bfc-1991-450c-a262-e04ee6a7de72"
+    ],
+    "currentFileId": "f4eb6bfc-1991-450c-a262-e04ee6a7de72",
+    "resources": {
+      "apigeuWest1testAdalotestget": {
+        "name": "apigeuWest1testAdalotestget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-1",
+          "apiMode": 0,
+          "apiName": "test-adalo",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "test",
+          "resourcePath": "/test",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "test-adalo",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-west-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1588589582339
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test-adalo",
+      "url": "https://github.com/georgetsag/test-adalo"
+    }
+  }
+}
